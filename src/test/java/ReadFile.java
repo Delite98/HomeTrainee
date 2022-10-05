@@ -1,12 +1,10 @@
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 
 public class ReadFile {
     @Test
-    public static void main() throws IOException {
+    public void createFile() throws IOException {
         File createFile = new File("newFile.txt");
         createFile.createNewFile();
         PrintWriter printText = new PrintWriter(createFile);
